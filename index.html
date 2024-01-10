@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('im1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative; /* Added relative positioning for the body */
+        }
+
+        header {
+            text-align: center; /* Center-align the header text */
+            padding: 200px;
+            font-size: 30px;
+            margin: 0 auto; /* Center the header within the body */
+        }
+
+        button {
+            background-color: #A22F5C;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        /* Use flexbox for the button container */
+        #buttonContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        #loginButton {
+            position: absolute;
+            top: 70%; /* Adjust the vertical position */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #registerButton {
+            position: absolute;
+            top: 80%; /* Adjust the vertical position */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 1px; /* Adjusted the bottom spacing */
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Training App</h1>
+        <!-- Add navigation links or other header content as needed -->
+    </header>
+
+    <main>
+        <p>.</p>
+        <!-- Add more content as needed -->
+        <div>
+            <button id="loginButton">Login</button>
+            <button id="registerButton">Register</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <!-- Add footer content, such as links to terms of service, privacy policy, etc. -->
+    </footer>
+
+    <script>
+        // Add JavaScript to handle button click event
+        document.getElementById("loginButton").addEventListener("click", function() {
+            // Perform any actions you need here, such as redirecting to a login page
+            // window.location.href = "login.html";
+            alert("Performing login action...");
+            window.location.href = "admin_login.php";
+        });
+        document.getElementById("registerButton").addEventListener("click", function() {
+            // Perform any actions you need here, such as redirecting to a register page
+            alert("Performing register action...");
+            window.location.href = "registration_form.php";
+        });
+    </script>
+
+</body>
+</html>
